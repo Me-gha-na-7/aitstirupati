@@ -3,61 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AITS Tirupati | Autonomous Excellence</title>
-    <link rel="stylesheet" href="style.css">
+    <title>AITS Tirupati | Digital Campus 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="top-bar">
-        <div class="container">
-            <span><i class="fas fa-phone"></i> 0877-2285609</span>
-            <span><i class="fas fa-envelope"></i> admissions@aits-tpt.edu.in</span>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-            </div>
-        </div>
-    </div>
-
-    <nav class="navbar">
-        <div class="container">
+    <nav class="navbar" id="navbar">
+        <div class="container flex-between">
             <div class="logo">
-                <h1>AITS <span>TIRUPATI</span></h1>
-                <small>Autonomous Institution</small>
+                <span class="brand">AITS <span class="accent">TIRUPATI</span></span>
+                <p class="tagline">AUTONOMOUS • NAAC 'A'</p>
             </div>
-            <ul class="nav-links" id="navLinks">
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#academics">Academics</a></li>
-                <li><a href="#placements">Placements</a></li>
-                <li><a href="#" class="btn-primary">Apply 2026</a></li>
+                <li><a href="#stats">Impact</a></li>
+                <li><a href="#departments">Programs</a></li>
+                <li><a href="#apply" class="btn-glass">Apply Now</a></li>
             </ul>
-            <div class="menu-toggle" id="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
         </div>
     </nav>
 
-    <div class="ticker-wrap">
-        <div class="ticker">
-            <div class="ticker__item">Update: MSME Idea Hackathon 5.0 registrations open.</div>
-            <div class="ticker__item">NBA Accreditation renewed for all UG Programs.</div>
-            <div class="ticker__item">Campus Placements: 400+ Offers received this month.</div>
-        </div>
-    </div>
-
     <section class="hero" id="home">
-        <div class="hero-content">
-            <h2>The Future of Engineering Starts Here</h2>
-            <p>Accredited by NAAC with 'A' Grade | NBA Accredited UG Programs</p>
-            <div class="hero-btns">
-                <a href="#" class="btn-main">Explore Campus</a>
-                <a href="#" class="btn-outline">View Placements</a>
+        <div class="overlay"></div>
+        <div class="hero-content" data-aos="zoom-out" data-aos-duration="1500">
+            <span class="badge">Admissions Open 2026-27</span>
+            <h1>Engineering <span class="text-gradient">Excellence</span></h1>
+            <p>Join South India's premier autonomous hub for Artificial Intelligence, Data Science, and Core Engineering.</p>
+            <div class="hero-actions">
+                <button class="btn-primary">Virtual Campus Tour</button>
+                <button class="btn-secondary">Download Curriculum</button>
             </div>
         </div>
     </section>
 
+    <section class="stats" id="stats">
+        <div class="container grid-4">
+            <div class="stat-card" data-aos="fade-up">
+                <h2 class="counter" data-target="15">0</h2>
+                <p>Years of Legacy</p>
+            </div>
+            <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="counter" data-target="95">0</h2>
+                <p>Placement %</p>
+            </div>
+            <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="counter" data-target="500">0</h2>
+                <p>Research Papers</p>
+            </div>
+            <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                <h2 class="counter" data-target="45">0</h2>
+                <p>Acre Smart Campus</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="departments" id="departments">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Global Departments</h2>
+                <div class="line"></div>
+            </div>
+            <div class="grid-3">
+                <div class="dept-card" data-aos="flip-left">
+                    <div class="dept-icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Building the next generation of intelligent systems.</p>
+                    <a href="#" class="learn-more">Explore Dept →</a>
+                </div>
+                <div class="dept-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="dept-icon"><i class="fas fa-code"></i></div>
+                    <h3>Computer Science</h3>
+                    <p>NBA Accredited excellence in software engineering.</p>
+                    <a href="#" class="learn-more">Explore Dept →</a>
+                </div>
+                <div class="dept-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="dept-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Electronics & Comm.</h3>
+                    <p>Innovating in VLSI and 5G communication tech.</p>
+                    <a href="#" class="learn-more">Explore Dept →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
